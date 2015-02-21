@@ -4,30 +4,70 @@
         <meta charset="utf-8" />
         <title>MakerHub Mobile</title>
         <!-- Style -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet" />
+        <link href="css/common.css" rel="stylesheet" />
+		
+        
 
         <!-- Include Angular -->
         <script src="scripts/angular.js"></script>
 
     </head>
-    <body>
+	
+	<body>		
+		
+		<!-------------------------------------------------- Navbar -------------------------------------------------->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">MakerHub Mobile</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="pages/settings.html">Settings</a></li>
+				<li><a href="#">Help</a></li>
+			  </ul>				  
+			</div>
+		  </div>
+		</nav>
+		<!-------------------------------------------------- /Navbar ------------------------------------------------->
+		
+		<button type="button" class="btn btn-default btn-lg" onclick="startConnection(this)">
+			<span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start
+		</button>
+		<button type="button" class="btn btn-default btn-lg">
+			<span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
+		</button>
+		<br />	<br />	<br />
+		<button type="button" class="btn btn-default btn-lg" onclick="toggleButtonState(this)">
+			<span class="glyphicon glyphicon-move" aria-hidden="true"></span> Accelerometer
+		</button>
+		
+		
+		
+		
 
-        {{6+9}}
+		<!-------------------------------------------------- Scripts -------------------------------------------------->
+		<script src="scripts/jquery-1.11.2.min.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
 
-        <div ng-controller="ButtonController as button">
-            <button class="btn" ng-click="button.increment()">
-                {{button.value}}
-            </button>
-        </div>
+		<script src="scripts/ng-cordova.js"></script>
+		<script src="cordova.js"></script>
+		<script src="scripts/platformOverrides.js"></script>
+		<script src="scripts/index.js"></script>
+		<script src="scripts/makerHubMobile.js"></script>
 
-        <!-- Scripts -->
-
-        <script src="scripts/ng-cordova.js"></script>
-        <script src="cordova.js"></script>
-        <script src="scripts/platformOverrides.js"></script>
-        <script src="scripts/index.js"></script>
-        <script src="scripts/makerHubMobile.js"></script>
-
-        <script src="scripts/index.js"></script>
-    </body>
+		<script src="scripts/index.js"></script>
+		<script src="scripts/mhCommon.js"></script>
+		
+		<!-------------------------------------------------- /Scripts ------------------------------------------------->
+	</body>
 </html>

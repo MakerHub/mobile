@@ -110,8 +110,10 @@
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="pages\settings.html" />
     <Content Include="pages\template.html" />
+    <Content Include="settings.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Folder Include="images\" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.css.map" />
@@ -146,18 +148,42 @@
     <Content Include="config.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="index.html" />
-    <Content Include="scripts\angular.js" />
-    <Content Include="scripts\bootstrap.js" />
-    <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\index.js" />
-    <Content Include="scripts\jquery-1.11.2.min.js" />
-    <Content Include="scripts\makerHubMobile.js" />
-    <Content Include="scripts\mhCommon.js" />
-    <Content Include="scripts\mhConfigSettings.js" />
-    <Content Include="scripts\ng-cordova.js" />
-    <Content Include="scripts\npm.js" />
-    <Content Include="scripts\platformOverrides.js" />
+    <Content Include="index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\angular.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\bootstrap.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\bootstrap.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\index.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\jquery-1.11.2.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\makerHubMobile.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\mhCommon.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\mhConfigSettings.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\ng-cordova.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\npm.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\platformOverrides.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="css\index.css" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
     <Content Include="res\icons\android\icon-48-mdpi.png" />

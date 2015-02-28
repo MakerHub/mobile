@@ -32,7 +32,7 @@
 			<div id="navbar" class="navbar-collapse collapse">
 			  <ul class="nav navbar-nav navbar-right">
 				<li><a href="#">Dashboard</a></li>
-				<li><a href="pages/settings.html">Settings</a></li>
+				<li><a href="settings.html">Settings</a></li>
 				<li><a href="#">Help</a></li>
 			  </ul>				  
 			</div>
@@ -43,13 +43,20 @@
 		<button type="button" class="btn btn-default btn-lg" onclick="startConnection(this)">
 			<span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start
 		</button>
-		<button type="button" class="btn btn-default btn-lg">
-			<span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
-		</button>
+        <button type="button" class="btn btn-default btn-lg" onclick="stopConnection(this)">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
+        </button>
 		<br />	<br />	<br />
-		<button type="button" class="btn btn-default btn-lg" onclick="toggleButtonState(this)">
-			<span class="glyphicon glyphicon-move" aria-hidden="true"></span> Accelerometer
-		</button>
+        <button type="button" class="btn btn-default btn-lg" onclick="toggleButtonState(this)">
+            <span class="glyphicon glyphicon-move" aria-hidden="true"></span> Accelerometer
+        </button>
+
+
+        <div ng-controller="StartTransmitting as goButton">
+            <button type="button" class="btn btn-default btn-lg" ng-click="goButton.onClick(this)">
+                Go!
+            </button>
+        </div>
 		
 		
 		

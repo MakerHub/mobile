@@ -1,20 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html ng-app="makerHubMobile">
     <head>
         <meta charset="utf-8" />
         <title>MakerHub Mobile</title>
         <!-- Style -->
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/index.css" rel="stylesheet" />
-        <link href="/css/common.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet" />
+        <link href="css/common.css" rel="stylesheet">
 
         <!-- Include Angular -->
-        <script src="/scripts/angular.js"></script>
-
+        <script src="scripts/angular.js"></script>
     </head>
-	
+
 	<body onload="loadSettings()">
-		
+
 		<!-------------------------------------------------- Navbar -------------------------------------------------->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container-fluid">
@@ -30,15 +29,15 @@
 			<div id="navbar" class="navbar-collapse collapse">
 			  <ul class="nav navbar-nav navbar-right">
 				<li><a href="#">Dashboard</a></li>
-				<li><a href="/pages/settings.html">Settings</a></li>
+				<li><a href="pages/settings.html">Settings</a></li>
 				<li><a href="#">Help</a></li>
-			  </ul>				  
+			  </ul>
 			</div>
 		  </div>
 		</nav>
 		<!-------------------------------------------------- /Navbar -------------------------------------------------->
-		
-		<div class="col-xs-3">
+
+		<div>
 			<form name="configSettings">
 				<label for="ex2">Connection Name</label>
 				<input type="text" name="connectionName" class="form-control" placeholder="Username">
@@ -54,20 +53,18 @@
 				<button class="btn btn-default pull-right" type="button">Cancel</button>
 			</form>
 		</div>
-		
+
 		<!-------------------------------------------------- Scripts -------------------------------------------------->
-		<script src="/scripts/jquery-1.11.2.min.js"></script>
-		<script src="/scripts/bootstrap.min.js"></script>
+		<script src="scripts/jquery-1.11.2.min.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
 
-		<script src="/scripts/ng-cordova.js"></script>
-		<script src="/cordova.js"></script>
-		<script src="/scripts/platformOverrides.js"></script>
-		<script src="/scripts/index.js"></script>
-		<script src="/scripts/makerHubMobile.js"></script>
-
-		<script src="/scripts/index.js"></script>
+		<script src="scripts/ng-cordova.js"></script>
+		<script src="cordova.js"></script>
+		<script src="scripts/platformOverrides.js"></script>
+		<script src="scripts/index.js"></script>
+		<script src="scripts/makerHubMobile.js"></script>		
 		
-		<script src="/scripts/mhConfigSettings.js"></script>
+		<script src="scripts/mhConfigSettings.js"></script>
 		<!-------------------------------------------------- /Scripts ------------------------------------------------->
 	</body>
 </html>

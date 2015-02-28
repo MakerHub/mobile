@@ -1,12 +1,22 @@
+
+
+var transmitTask;
+var wsConnection;
+
 function startConnection(button)
 {
 	toggleButtonState(button);
-	alert(localStorage.getItem("connectionName"));
+	wsConnection = new WebSocket("ws://192.168.1.107:12345");
+	wsConnection.onopen = function (event)
+	{
+	    transmitTask = setInterval(main, 2);
+	};
 }
 
-function stop(elem)
+function stopConnection(button)
 {
-	
+    clearInterval(transmitTask);
+    wsConnection.close();
 }
 
 function toggleButtonState(button)
@@ -25,4 +35,22 @@ function toggleButtonState(button)
 function hasClass(el, cls) 
 {
   return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
+}
+
+
+function main()
+{
+    wsConnection.send("Hello World!");
+}
+
+function setButtonState(button, active)
+{
+    if (active)
+    {
+        button.classList.add('active');
+    }
+    else
+    {
+        button.classList.remove('active');
+    }
 }

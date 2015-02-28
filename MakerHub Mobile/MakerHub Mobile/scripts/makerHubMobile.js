@@ -35,7 +35,7 @@
 
             wsConnection.onopen = function (event)
             {
-                transmitTask = setInterval(main, 100);
+                transmitTask = setInterval(main, 1);
             };
 
             wsConnection.onclose = function ()
@@ -57,7 +57,18 @@
 
         function main()
         {
-            wsConnection.send("Hello World!");
+            navigator.accelerometer.getCurrentAcceleration(sendAccel, accelErrorHandler);
+            //wsConnection.send("Hello World!");
+        };
+
+        function sendAccel(acceleration)
+        {
+            wsConnection.send(JSON.stringify(acceleration));
+        };
+
+        function accelErrorHandler()
+        {
+            alert('Accelerometer Error');
         };
     });
 })();

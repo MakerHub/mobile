@@ -111,6 +111,40 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="pages\template.html" />
+    <Content Include="plugins\org.apache.cordova.device-motion\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.device-motion\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.device-motion\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.device-motion\package.json" />
+    <Content Include="plugins\org.apache.cordova.device-motion\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.device-motion\README.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\android\AccelListener.java" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\blackberry10\index.js" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\browser\accelerometer.js" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\browser\AccelerometerProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\firefoxos\accelerometer.js" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\ios\CDVAccelerometer.h" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\ios\CDVAccelerometer.m" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\tizen\AccelerometerProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\ubuntu\accelerometer.cpp" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\ubuntu\accelerometer.h" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\windows8\AccelerometerProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device-motion\src\wp\Accelerometer.cs" />
+    <Content Include="plugins\org.apache.cordova.device-motion\tests\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.device-motion\tests\tests.js" />
+    <Content Include="plugins\org.apache.cordova.device-motion\www\Acceleration.js" />
+    <Content Include="plugins\org.apache.cordova.device-motion\www\accelerometer.js" />
     <Content Include="settings.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
